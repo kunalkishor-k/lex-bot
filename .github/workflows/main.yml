@@ -17,6 +17,6 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://kunalkishor-k:$HF_TOKEN@huggingface.co/spaces/kunalkishor-k/lex-bot main
+        run: git push --force https://kunalkishor-k:$HF_TOKEN@huggingface.co/spaces/kunalkishor-k/lex-bot main
 # Finally, create an Action that automatically checks the file size of any new pull request:
 
